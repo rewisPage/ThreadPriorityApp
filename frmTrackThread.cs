@@ -1,16 +1,10 @@
-using System.Runtime.InteropServices;
-
 namespace ThreadPriorityApp
 {
-    public partial class frmTrackThread : Form
+    public partial class FrmTrackThread : Form
     {
-        [DllImport("kernel32.dll", SetLastError = true)]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool AllocConsole();
-        public frmTrackThread()
+        public FrmTrackThread()
         {
             InitializeComponent();
-            AllocConsole();
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -37,7 +31,7 @@ namespace ThreadPriorityApp
             threadD.Priority = ThreadPriority.BelowNormal;
 
             // Start all threads
-            lblStatus.Text = "Excecuting . . .";
+            lblStatus.Text = "Executing . . .";
             threadA.Start();
             threadB.Start();
             threadC.Start();

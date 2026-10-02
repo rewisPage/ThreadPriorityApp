@@ -2,7 +2,7 @@
 {
     public class MyThreadClass
     {
-        // Thread1: Loops up to index 2 (runs 0, 1, 2) and sleeps for 0.5s (500 ms)
+        // Loops up to index 2 (runs 0, 1, 2) and sleeps for 0.5s (500 ms)
         public static void Thread1()
         {
             for (int loopCount = 0; loopCount <= 2; loopCount++)
@@ -13,7 +13,7 @@
             }
         }
 
-        // Thread2: Loops up to index 5 (runs 0 through 5) and sleeps for 1.5s (1500 ms)
+        // Loops up to index 5 (runs 0 through 5) and sleeps for 1.5s (1500 ms)
         public static void Thread2()
         {
             for (int loopCount = 0; loopCount <= 5; loopCount++)

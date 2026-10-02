@@ -1,6 +1,6 @@
 ﻿namespace ThreadPriorityApp
 {
-    partial class frmTrackThread
+    partial class FrmTrackThread
     {
         /// <summary>
         ///  Required designer variable.
